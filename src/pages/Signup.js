@@ -1,6 +1,7 @@
 import React from 'react'
 
 import trees from '../assests/login.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Signup() {
   return (
@@ -19,7 +20,8 @@ export default function Signup() {
                         <input className='border-4 p-2 rounded-md w-auto mt-3' type="text" placeholder='Phone Number' />
                     </div>
                     <button className='w-full py-2 my-4 bg-blue hover:bg-grey font-extrabold rounded-md'>Sign Up</button>
-                    <p className='text-center'>Already Have an Account?<a className='text-red hover:text-blue'>Sign In</a></p>
+                    <p className='text-center'>Already Have an Account?
+                    <Link to='/Login'><a className='text-red hover:text-blue'>Sign In</a></Link></p>
                 </form>
             </div>
         </div>
